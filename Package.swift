@@ -22,9 +22,9 @@ let package = Package(
 //        .binaryTarget(name: "Kitaboo_Reader_SDK", path: "./Sources/Kitaboo_Reader_SDK.xcframework"),
 //        .binaryTarget(name: "KitabooSDKWithReader", path: "./Sources/KitabooSDKWithReader.xcframework"),
         
-        .binaryTarget(name: "KitabooBookShelfFramework", url: "https://qaread.kitaboo.com/reader/Sprint/githubfiles/GithubZip/KitabooBookShelfFramework.xcframework.zip", checksum: "d0fa9e7035d9cf2876bb62c67cf9a55b4ac71a209e578c929b60de0823bcb65c"),
-        .binaryTarget(name: "Kitaboo_Reader_SDK", url: "https://qaread.kitaboo.com/reader/Sprint/githubfiles/GithubZip/Kitaboo_Reader_SDK.xcframework.zip", checksum: "997e6dee598dbeb961114151692a2910cf4d4fadd208b84598da7ed4c313e597"),
-        .binaryTarget(name: "KitabooSDKWithReader", url: "https://qaread.kitaboo.com/reader/Sprint/githubfiles/GithubZip/KitabooSDKWithReader.xcframework.zip", checksum: "2f377ba294232ce268ae450f308404f56385fcf079b5a72bd8b26f9a5e20ed81"),
+        .binaryTarget(name: "KitabooBookShelfFramework", url: "https://qaread.kitaboo.com/reader/Sprint/githubfiles/GithubZip/KitabooBookShelfFramework.xcframework.zip", checksum: "5355534f1cd85057c23b993b1eae7b6d06c1db08a3c6337379dfa98f458b2803"),
+        .binaryTarget(name: "Kitaboo_Reader_SDK", url: "https://qaread.kitaboo.com/reader/Sprint/githubfiles/GithubZip/Kitaboo_Reader_SDK.xcframework.zip", checksum: "47c0edd175b670b0f54acbd451ddb27ca27a399d1d7ce50ccb5a0a66daed1d7c"),
+        .binaryTarget(name: "KitabooSDKWithReader", url: "https://qaread.kitaboo.com/reader/Sprint/githubfiles/GithubZip/KitabooSDKWithReader.xcframework.zip", checksum: "50399b94fcfb37ca74de8ff26727f385f6abe874c6e1a93911cbd74c42f536e1"),
         .target(
             name: "KitabooBookShelfRemote",
             dependencies: []),
@@ -33,3 +33,4 @@ let package = Package(
             dependencies: ["KitabooBookShelfRemote"]),
     ]
 )
+
