@@ -1,4 +1,4 @@
-// swift-tools-version: 5.5
+// swift-tools-version:5.5
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -18,13 +18,11 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
-//        .binaryTarget(name: "KitabooBookShelf", path: "./Sources/KitabooBookShelf.xcframework"),
-//        .binaryTarget(name: "Kitaboo_Reader_SDK", path: "./Sources/Kitaboo_Reader_SDK.xcframework"),
-//        .binaryTarget(name: "KitabooSDKWithReader", path: "./Sources/KitabooSDKWithReader.xcframework"),
+        .binaryTarget(name: "KitabooBookShelfFramework", url: "https://qaread.kitaboo.com/reader/Sprint/githubfiles/GithubZip/KitabooBookShelfFramework.xcframework.zip", checksum: "77af02bda39b3a54b7bf3784859c1ad6d0b06043ee162c764c006eb7b6ed81e2"),
         
-        .binaryTarget(name: "KitabooBookShelfFramework", url: "https://qaread.kitaboo.com/reader/Sprint/githubfiles/GithubZip/KitabooBookShelfFramework.xcframework.zip", checksum: "5355534f1cd85057c23b993b1eae7b6d06c1db08a3c6337379dfa98f458b2803"),
-        .binaryTarget(name: "Kitaboo_Reader_SDK", url: "https://qaread.kitaboo.com/reader/Sprint/githubfiles/GithubZip/Kitaboo_Reader_SDK.xcframework.zip", checksum: "47c0edd175b670b0f54acbd451ddb27ca27a399d1d7ce50ccb5a0a66daed1d7c"),
-        .binaryTarget(name: "KitabooSDKWithReader", url: "https://qaread.kitaboo.com/reader/Sprint/githubfiles/GithubZip/KitabooSDKWithReader.xcframework.zip", checksum: "50399b94fcfb37ca74de8ff26727f385f6abe874c6e1a93911cbd74c42f536e1"),
+        .binaryTarget(name: "Kitaboo_Reader_SDK", url: "https://qaread.kitaboo.com/reader/Sprint/githubfiles/GithubZip/Kitaboo_Reader_SDK.xcframework.zip", checksum: "c8bbcb805552b8d3b18b8b730ed686a12e54174a62fcf7943e21d3a99a54fe77"),
+        
+        .binaryTarget(name: "KitabooSDKWithReader", url: "https://qaread.kitaboo.com/reader/Sprint/githubfiles/GithubZip/KitabooSDKWithReader.xcframework.zip", checksum: "b66331452627f8daf8e75a02fc2dbaa7a4ef0672ef41012ca08982f6f678e514"),
         .target(
             name: "KitabooBookShelfRemote",
             dependencies: []),
@@ -33,4 +31,3 @@ let package = Package(
             dependencies: ["KitabooBookShelfRemote"]),
     ]
 )
-
