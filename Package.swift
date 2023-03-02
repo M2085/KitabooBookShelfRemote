@@ -25,7 +25,7 @@ let package = Package(
         .binaryTarget(name: "KitabooSDKWithReader", url: "https://qaread.kitaboo.com/reader/Sprint/githubfiles/GithubZip/KitabooSDKWithReader.xcframework.zip", checksum: "74bec3c2493d86296a803d16a7e28cafc212c67652194609ee028f83a5e583ff"),
         .target(
             name: "KitabooBookShelfRemote",
-            dependencies: []),
+            dependencies: ["Kitaboo_Reader_SDK", "KitabooSDKWithReader"]),
         .testTarget(
             name: "KitabooBookShelfRemoteTests",
             dependencies: ["KitabooBookShelfRemote"]),
